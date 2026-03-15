@@ -1,13 +1,15 @@
-<h2>Mis Metas de Vida</h2>
+<div class="home-container">
+  <h2>Mis Metas de Vida</h2>
 
-<div>
-  <input type="text" [(ngModel)]="nuevaMeta" placeholder="Escribe una nueva meta...">
-  <button (click)="agregar()">Agregar Meta</button>
+  <div class="input-group">
+    <input type="text" [(ngModel)]="nuevaMeta" placeholder="Escribe una nueva meta...">
+    <button class="add-btn" (click)="agregar()">Agregar Meta</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let m of misMetas">
+      <span class="meta-text">{{ m.meta }}</span>
+      <button class="delete-btn" (click)="borrar(m.id)">Eliminar</button>
+    </li>
+  </ul>
 </div>
-
-<ul>
-  <li *ngFor="let m of misMetas">
-    {{ m.meta }} 
-    <button (click)="borrar(m.id)" style="background-color: #e74c3c; margin-left: 10px;">Eliminar</button>
-  </li>
-</ul>

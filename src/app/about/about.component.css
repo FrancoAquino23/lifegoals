@@ -1,0 +1,32 @@
+.about-container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.card {
+    background-color: #5499d7;
+    color: white;
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card p {
+    font-size: 28px;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.card strong {
+    font-weight: 600;
+    margin-right: 10px;
+}
