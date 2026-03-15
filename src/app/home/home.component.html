@@ -1,1 +1,13 @@
-<p>home works!</p>
+<h2>Mis Metas de Vida</h2>
+
+<div>
+  <input type="text" [(ngModel)]="nuevaMeta" placeholder="Escribe una nueva meta...">
+  <button (click)="agregar()">Agregar Meta</button>
+</div>
+
+<ul>
+  <li *ngFor="let m of misMetas">
+    {{ m.meta }} 
+    <button (click)="borrar(m.id)" style="background-color: #e74c3c; margin-left: 10px;">Eliminar</button>
+  </li>
+</ul>
